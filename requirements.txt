@@ -5,4 +5,5 @@ pandas
 nltk
 spacy
 lightgbm
+en-core-web-sm
 torch

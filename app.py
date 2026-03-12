@@ -8,7 +8,7 @@ import nltk
 
 @st.cache_resource
 def load_nltk():
-    nltk.download('punkt')
+    nltk.download('punkt_tab')
     nltk.download('stopwords')
 
 load_nltk()

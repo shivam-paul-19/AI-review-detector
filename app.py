@@ -4,6 +4,10 @@ import pickle
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import spacy
+import nltk
+
+nltk.download('punkt')
+nltk.download('stopwords')
 
 with open("models/model.pkl", 'rb') as file:
     model = pickle.load(file)

@@ -6,8 +6,12 @@ from nltk.corpus import stopwords
 import spacy
 import nltk
 
-nltk.download('punkt')
-nltk.download('stopwords')
+@st.cache_resource
+def load_nltk():
+    nltk.download('punkt')
+    nltk.download('stopwords')
+
+load_nltk()
 
 with open("models/model.pkl", 'rb') as file:
     model = pickle.load(file)
